@@ -1,0 +1,21 @@
+=============================
+   ADMIN ACCOUNTS - OnlineBookStore
+=============================
+
+1. Username: admin1
+   Password: admin1
+   Email:    admin1@example.com
+   FullName: Administrator One
+   Role:     admin
+
+2. Username: admin2
+   Password: admin2
+   Email:    admin2@example.com
+   FullName: Administrator Two
+   Role:     admin
+
+3. Username: admin
+   Password: admin
+   Email:    admin@gmail.com
+   FullName: Administrator
+   Role:     admin

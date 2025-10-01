@@ -1,0 +1,1314 @@
+/* ==== HOME HERO ==== */
+.home_cont {
+    background: url("../images/bg.jpg") no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.home_cont::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.main_descrip {
+    position: relative;
+    z-index: 1;
+}
+
+.main_descrip h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.main_descrip p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.discover_btn {
+    background: #C1121F;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.discover_btn:hover {
+    background: #ff4d4d;
+}
+
+/* ==== BOOK GRID ==== */
+.book-grid {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.book-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.book-card .author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.book-card .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003049;
+    margin-bottom: 10px;
+}
+
+.book-card form button,
+.book-card .detail-link {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.book-card form button {
+    background: #C1121F;
+    color: white;
+}
+
+.book-card form button:hover {
+    background: #ff4d4d;
+}
+
+.book-card .detail-link {
+    background: #003049;
+    color: white;
+}
+
+.book-card .detail-link:hover {
+    background: #005f8f;
+}
+
+/* ==== STORY SECTION ==== */
+.story_section {
+    background: #5ca0d3;
+    color: white;
+    padding: 60px 20px;
+}
+
+.story_content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.story_content img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.story_text {
+    flex: 1;
+}
+
+.story_text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.story_text p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ==== QUERIES SECTION ==== */
+.queries_section {
+    background: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.queries_section h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #003049;
+}
+
+.queries_section p {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.btn.red {
+    background: #C1121F;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn.red:hover {
+    background: #ff4d4d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .story_content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .story_content img {
+        width: 100%;
+    }
+}
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #e6f0fa;
+    border-radius: 12px;
+    margin: 30px auto;
+    width: 85%;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px 40px;
+    color: #333;
+}
+
+.about-text h2 {
+    font-size: 28px;
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    line-height: 1.6;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+/* Book Detail Page */
+.book-detail-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.book-detail {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.book-detail .book-image img {
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.book-detail .book-info {
+    flex: 1;
+}
+
+.book-detail .book-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-detail .book-info .author {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.book-detail .book-info .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.book-detail .book-info .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.add-cart-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-cart-form input[type="number"] {
+    width: 70px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.add-cart-form button {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-cart-form button:hover {
+    background: #d62828;
+}
+
+.not-found {
+    color: red;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+}
+/* Feedback Page */
+.feedback-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.feedback-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.feedback-form button {
+    padding: 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.feedback-form button:hover {
+    background: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #eaf6ea;
+    border: 1px solid #a3d9a5;
+    border-radius: 6px;
+    color: #256029;
+}
+
+.feedback-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-item {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.feedback-msg {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.feedback-user {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.feedback-date {
+    font-size: 12px;
+    color: #777;
+}
+/* Feedback Container */
+.feedback-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.feedback-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* Form */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    background: #f9f9f9;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+    background: #fff;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 8px rgba(0,123,255,0.3);
+}
+
+/* Button */
+.feedback-form button {
+    padding: 14px;
+    font-size: 16px;
+    background: #e53935;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background 0.3s;
+}
+
+.feedback-form button:hover {
+    background: #c62828;
+}
+
+/* Feedback list */
+.feedback-list {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.feedback-list h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feedback-list p {
+    color: #666;
+    font-style: italic;
+}
+/* --- Orders Page --- */
+.orders-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.orders-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.empty-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin: 40px 0;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th, 
+.order-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.order-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.order-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.order-table .btn {
+    padding: 6px 14px;
+    background: #00b894;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.order-table .btn:hover {
+    background: #019875;
+}
+
+/* --- Status badge --- */
+.status {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background: #ffeaa7;
+    color: #b76e00;
+}
+
+.status.completed {
+    background: #55efc4;
+    color: #00695c;
+}
+
+.status.cancelled {
+    background: #fab1a0;
+    color: #c0392b;
+}
+/* --- Order Detail Page --- */
+.order-detail-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.order-detail-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+.order-summary {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #444;
+}
+
+.order-summary p {
+    margin: 8px 0;
+}
+
+.order-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.order-detail-table th,
+.order-detail-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.order-detail-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+.order-detail-table tr:nth-child(even) {
+    background: #fafafa;
+}
+
+.back-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-btn .btn {
+    padding: 8px 20px;
+    background: #0984e3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.back-btn .btn:hover {
+    background: #0652dd;
+}
+/* ========================
+   CART PAGE STYLE
+======================== */
+
+/* Container chính */
+.cart-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Tiêu đề */
+.cart-container h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Layout sản phẩm */
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Thẻ sản phẩm */
+.cart-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s;
+}
+
+.cart-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ảnh sản phẩm */
+.cart-card img.cart-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Tên sản phẩm */
+.cart-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+/* Giá */
+.cart-card p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Form update */
+.cart-card form {
+    margin: 10px 0;
+}
+
+.cart-card input[type="number"] {
+    width: 60px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Nút update */
+.btn-update {
+    background: #d9534f;
+    color: #fff;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-update:hover {
+    background: #c9302c;
+}
+
+/* ========================
+   CART TOTAL
+======================== */
+.cart-total {
+    background: #4a90e2;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    margin: 30px auto 0;
+    width: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Text tổng tiền */
+.cart-total h3 {
+    margin-bottom: 15px;
+}
+
+/* Các nút trong cart total */
+.cart-total a {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 8px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* Delete All */
+.cart-total .btn-delete {
+    background-color: #0d2b52;
+    color: #fff;
+}
+
+.cart-total .btn-delete:hover {
+    background-color: #163d73;
+}
+
+/* Continue Shopping */
+.cart-total .btn-continue {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.cart-total .btn-continue:hover {
+    background-color: #c9302c;
+}
+
+/* Checkout */
+.cart-total .btn-checkout {
+    background-color: #e9ecef;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.cart-total .btn-checkout:hover {
+    background-color: #d6d8db;
+}
+.orders-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.orders-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.orders-table th, .orders-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.orders-table th {
+    background: #f5f5f5;
+    color: #444;
+}
+
+.orders-table tr:hover {
+    background: #fafafa;
+}
+
+.btn-view {
+    padding: 6px 12px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-view:hover {
+    background: #0056b3;
+}
+
+.status.pending {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.status.completed {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status.cancelled {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.no-orders {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.link-shop {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-shop:hover {
+    text-decoration: underline;
+}
+.order-detail-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.order-info {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+.order-info p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.order-items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.order-items-table th, 
+.order-items-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.order-items-table th {
+    background: #f5f5f5;
+}
+
+.order-total {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: right;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 16px;
+    background: #555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn-back:hover {
+    background: #333;
+}
+/* Thanh tìm kiếm */
+.search-bar {
+    margin: 20px auto;
+    text-align: center;
+}
+.search-bar input[type=text] {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin-left: 5px;
+}
+.search-bar button:hover {
+    background: #0056b3;
+}
+
+/* Container chứa sách */
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+/* Thẻ sách */
+.book-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.book-card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.book-card img {
+    max-width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.book-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.book-card h3 a {
+    text-decoration: none;
+    color: #333;
+}
+.book-card h3 a:hover {
+    color: #007bff;
+}
+.book-card p {
+    margin: 5px 0;
+}
+
+/* Add to Cart */
+.book-card form {
+    margin-top: 10px;
+}
+.qty-input {
+    width: 60px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+.book-card button {
+    padding: 8px 12px;
+    background: #28a745;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.book-card button:hover {
+    background: #218838;
+}
+
+/* Không có kết quả */
+.no-result {
+    text-align: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}
+/* =========================
+   Checkout Page
+   ========================= */
+.checkout-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.checkout-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Order Summary */
+.checkout-summary {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.checkout-summary h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #444;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.checkout-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checkout-summary ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #ddd;
+    font-size: 15px;
+    color: #555;
+}
+
+.checkout-summary ul li:last-child {
+    border-bottom: none;
+}
+
+.checkout-summary h3:last-of-type {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #000;
+    text-align: right;
+}
+
+/* Checkout Form */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-form label {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.checkout-form input,
+.checkout-form textarea,
+.checkout-form select {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.checkout-form input:focus,
+.checkout-form textarea:focus,
+.checkout-form select:focus {
+    border-color: #007bff;
+}
+
+.checkout-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Checkout Button */
+.btn-checkout {
+    margin-top: 10px;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-checkout:hover {
+    background: #0056b3;
+}
+
+/* Empty cart message */
+.checkout-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.checkout-container p a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.checkout-container p a:hover {
+    text-decoration: underline;
+}
+/* Order Success Container */
+.order-success-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.order-success-container h2 {
+    font-size: 28px;
+    color: #2ecc71;
+    margin-bottom: 20px;
+}
+
+.success-msg {
+    color: #27ae60;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Box message */
+.order-success-box {
+    background: #f8fdf9;
+    border: 1px solid #d1f2d8;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Actions (buttons) */
+.order-success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.order-success-actions a {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.order-success-actions .btn-continue {
+    background: #3498db;
+    color: #fff;
+}
+
+.order-success-actions .btn-continue:hover {
+    background: #2980b9;
+}
+
+.order-success-actions .btn-checkout {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.order-success-actions .btn-checkout:hover {
+    background: #27ae60;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Orders Page */
+.orders-wrapper {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.orders-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #b30000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.no-orders {
+    text-align: center;
+    font-size: 16px;
+    color: #444;
+}
+
+.orders-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.order-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    padding: 15px 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.order-card h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.order-card p {
+    margin: 4px 0;
+}
+
+.order-card span {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Status styles */
+.status {
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.status.Pending { background: #ffecb3; color: #b36b00; }
+.status.Confirmed { background: #c8e6c9; color: #256029; }
+.status.Cancelled { background: #ffcdd2; color: #b71c1c; }
+
+/* Responsive: 1 cột khi màn nhỏ */
+@media (max-width: 768px) {
+    .orders-container {
+        grid-template-columns: 1fr;
+    }
+}

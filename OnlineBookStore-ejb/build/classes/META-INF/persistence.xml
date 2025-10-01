@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+    <persistence-unit name="OnlineBookStorePU" transaction-type="JTA">
+        <jta-data-source>jdbc/OnlineBookStoreDS</jta-data-source>
+        <class>entities.Users</class>
+        <class>entities.Books</class>
+        <class>entities.Categories</class>
+        <class>entities.Authors</class>
+        <class>entities.Cart</class>
+        <class>entities.Orders</class>
+        <class>entities.OrderItems</class>
+        <class>entities.Reviews</class>
+        <class>entities.Wishlist</class>
+        <class>entities.Promotions</class>
+        <class>entities.Feedback</class>
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+        <properties>
+            <property name="jakarta.persistence.schema-generation.database.action" value="none"/>
+            <property name="eclipselink.logging.level" value="FINE"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+        </properties>
+    </persistence-unit>
+</persistence>

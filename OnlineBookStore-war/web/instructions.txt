@@ -1,0 +1,19 @@
+Quick test (locally):
+1. Start SQL Server and create DB: run database/OnlineBookStore_schema.sql.
+2. Configure GlassFish datasource:
+   - JNDI: jdbc/OnlineBookStoreDS
+   - Driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+   - URL: jdbc:sqlserver://localhost:1433;databaseName=OnlineBookStore
+   - User/Pass: as in your DB (sa / yourpass)
+
+3. Deploy WAR:
+   - Use NetBeans "Run" or Admin Console -> Applications -> Deploy -> select build/OnlineBookStore.war
+
+4. Browse:
+   - http://localhost:8080/OnlineBookStore-war/
+   - Admin console: http://localhost:8080/OnlineBookStore-war/admin/admin-dashboard
+   - Login with admin credentials from admin-creds.txt
+
+If you get DB errors, check:
+ - datasource name / persistence.xml JTA datasource
+ - DB connection credentials and firewall/port
